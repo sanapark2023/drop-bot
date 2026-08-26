@@ -2,7 +2,7 @@ name: Auto Drop Post
 
 on:
   schedule:
-    - cron: "0 21 * * *" # 06:00 KST daily
+    - cron: "35 6 * * *" # 06:00 KST daily
   workflow_dispatch:
     inputs:
       force_post:
