@@ -1,0 +1,116 @@
+{
+  "products": {
+    "decal-hoodie": {
+      "name": "데칼 후디",
+      "price": "US$100.00",
+      "sold_out": false,
+      "url": "https://openai.com/ko-KR/supply/product/decal-hoodie/"
+    },
+    "pit-crew-shirt": {
+      "name": "피트 크루 셔츠",
+      "price": "US$75.00",
+      "sold_out": false,
+      "url": "https://openai.com/ko-KR/supply/product/pit-crew-shirt/"
+    },
+    "trackside-hat": {
+      "name": "트랙사이드 모자",
+      "price": "US$30.00",
+      "sold_out": false,
+      "url": "https://openai.com/ko-KR/supply/product/trackside-hat/"
+    },
+    "26-openai-1-64-car": {
+      "name": "'26 OPENAI 1:64 미니카",
+      "price": "US$15.00",
+      "sold_out": false,
+      "url": "https://openai.com/ko-KR/supply/product/26-openai-1-64-car/"
+    },
+    "air-freshener": {
+      "name": "방향제",
+      "price": "US$5.00",
+      "sold_out": false,
+      "url": "https://openai.com/ko-KR/supply/product/air-freshener/"
+    },
+    "r-d-co-race-pin-pack": {
+      "name": "R&D CO. 레이스 핀 세트",
+      "price": "US$10.00",
+      "sold_out": false,
+      "url": "https://openai.com/ko-KR/supply/product/r-d-co-race-pin-pack/"
+    },
+    "bumper-sticker-pack": {
+      "name": "범퍼 스티커 팩",
+      "price": null,
+      "sold_out": true,
+      "url": "https://openai.com/ko-KR/supply/product/bumper-sticker-pack/"
+    },
+    "codex-bubble-cap": {
+      "name": "CODEX 버블 캡",
+      "price": "US$40.00",
+      "sold_out": false,
+      "url": "https://openai.com/ko-KR/supply/product/codex-bubble-cap/"
+    },
+    "blossom-hat": {
+      "name": "블라섬 모자",
+      "price": "US$40.00",
+      "sold_out": false,
+      "url": "https://openai.com/ko-KR/supply/product/blossom-hat/"
+    },
+    "pixel-nalgene": {
+      "name": "픽셀 날진",
+      "price": "US$25.00",
+      "sold_out": false,
+      "url": "https://openai.com/ko-KR/supply/product/pixel-nalgene/"
+    },
+    "bloop-tote": {
+      "name": "블룹 토트",
+      "price": "US$45.00",
+      "sold_out": false,
+      "url": "https://openai.com/ko-KR/supply/product/bloop-tote/"
+    },
+    "good-research-tee": {
+      "name": "굿 리서치 티셔츠",
+      "price": null,
+      "sold_out": true,
+      "url": "https://openai.com/ko-KR/supply/product/good-research-tee/"
+    },
+    "blossom-socks": {
+      "name": "블라섬 양말",
+      "price": null,
+      "sold_out": true,
+      "url": "https://openai.com/ko-KR/supply/product/blossom-socks/"
+    },
+    "codex-distressed-tee": {
+      "name": "CODEX 디스트레스드 티셔츠",
+      "price": null,
+      "sold_out": true,
+      "url": "https://openai.com/ko-KR/supply/product/codex-distressed-tee/"
+    },
+    "codex-build-hoodie": {
+      "name": "CODEX 빌드 후디",
+      "price": null,
+      "sold_out": true,
+      "url": "https://openai.com/ko-KR/supply/product/codex-build-hoodie/"
+    },
+    "chatgpt-longsleeve": {
+      "name": "CHATGPT 롱슬리브",
+      "price": null,
+      "sold_out": true,
+      "url": "https://openai.com/ko-KR/supply/product/chatgpt-longsleeve/"
+    },
+    "research-half-zip": {
+      "name": "리서치 하프 집업",
+      "price": null,
+      "sold_out": true,
+      "url": "https://openai.com/ko-KR/supply/product/research-half-zip/"
+    },
+    "chatgpt-basketball": {
+      "name": "CHATGPT 농구공",
+      "price": null,
+      "sold_out": true,
+      "url": "https://openai.com/ko-KR/supply/product/chatgpt-basketball/"
+    }
+  },
+  "posted": [
+    "decal-hoodie"
+  ],
+  "last_run": "2026-08-26T15:23:54.291364+09:00"
+}
