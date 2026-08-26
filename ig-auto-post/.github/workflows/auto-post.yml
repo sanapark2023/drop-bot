@@ -1,0 +1,81 @@
+name: Auto Drop Post
+
+on:
+  schedule:
+    - cron: "0 21 * * *" # 06:00 KST daily
+  workflow_dispatch:
+    inputs:
+      force_post:
+        description: "신규 드롭이 없어도 미게시 제품 하나로 강제 게시 (테스트용)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-drop-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps + fonts
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q fonts-inter fonts-jetbrains-mono
+          pip install requests beautifulsoup4 cairosvg
+
+      - name: Generate carousel
+        id: gen
+        env:
+          FORCE_POST: ${{ inputs.force_post }}
+        run: |
+          set +e
+          python pipeline/generate.py
+          code=$?
+          set -e
+          if [ "$code" = "78" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          [ "$code" = "0" ] || exit "$code"
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+
+      - name: Commit state and images
+        run: |
+          git config user.name "drop-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state.json posts/ latest_manifest.txt 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "auto-post assets $(date -u +%F)"
+          git push
+
+      - name: Publish to Instagram
+        if: steps.gen.outputs.skip == 'false'
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          BRANCH: ${{ github.ref_name }}
+        run: python pipeline/publish.py
+
+  refresh-token-reminder:
+    # 장기 토큰은 60일 유효 · 갱신 API로 유효기간을 연장할 수 있음.
+    # 갱신된 '새 토큰 값'을 Secrets에 자동 반영하려면 별도 PAT가 필요하므로,
+    # 여기서는 만료가 다가오면 실행 로그로 경고만 남긴다 (README 참고).
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule'
+    steps:
+      - name: Check token validity
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: |
+          resp=$(curl -s "https://graph.instagram.com/v23.0/me?fields=username&access_token=${IG_ACCESS_TOKEN}")
+          echo "$resp" | grep -q '"username"' \
+            && echo "token OK" \
+            || { echo "::error::IG token invalid or expired — README의 토큰 재발급 절차를 따르세요"; exit 1; }
