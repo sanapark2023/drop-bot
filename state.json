@@ -38,8 +38,8 @@
     },
     "bumper-sticker-pack": {
       "name": "범퍼 스티커 팩",
-      "price": null,
-      "sold_out": true,
+      "price": "US$10.00",
+      "sold_out": false,
       "url": "https://openai.com/ko-KR/supply/product/bumper-sticker-pack/"
     },
     "codex-bubble-cap": {
@@ -112,10 +112,11 @@
   "posted": [
     "26-openai-1-64-car",
     "air-freshener",
+    "bumper-sticker-pack",
     "decal-hoodie",
     "pit-crew-shirt",
     "r-d-co-race-pin-pack",
     "trackside-hat"
   ],
-  "last_run": "2026-08-28T02:53:58.391655+09:00"
+  "last_run": "2026-08-29T04:00:26.903377+09:00"
 }
