@@ -32,8 +32,8 @@
     },
     "r-d-co-race-pin-pack": {
       "name": "R&D CO. 레이스 핀 세트",
-      "price": "US$10.00",
-      "sold_out": false,
+      "price": null,
+      "sold_out": true,
       "url": "https://openai.com/ko-KR/supply/product/r-d-co-race-pin-pack/"
     },
     "bumper-sticker-pack": {
@@ -112,6 +112,7 @@
   "posted": [
     "26-openai-1-64-car",
     "air-freshener",
+    "blossom-hat",
     "bumper-sticker-pack",
     "codex-bubble-cap",
     "decal-hoodie",
@@ -119,5 +120,5 @@
     "r-d-co-race-pin-pack",
     "trackside-hat"
   ],
-  "last_run": "2026-08-29T21:50:12.623556+09:00"
+  "last_run": "2026-08-30T21:13:47.173360+09:00"
 }
