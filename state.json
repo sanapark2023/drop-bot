@@ -74,8 +74,8 @@
     },
     "blossom-socks": {
       "name": "블라섬 양말",
-      "price": null,
-      "sold_out": true,
+      "price": "US$15.00",
+      "sold_out": false,
       "url": "https://openai.com/ko-KR/supply/product/blossom-socks/"
     },
     "codex-distressed-tee": {
@@ -114,6 +114,7 @@
     "air-freshener",
     "bloop-tote",
     "blossom-hat",
+    "blossom-socks",
     "bumper-sticker-pack",
     "codex-bubble-cap",
     "decal-hoodie",
@@ -122,5 +123,5 @@
     "r-d-co-race-pin-pack",
     "trackside-hat"
   ],
-  "last_run": "2026-09-16T21:02:51.930016+09:00"
+  "last_run": "2026-09-17T21:05:34.529955+09:00"
 }
