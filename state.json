@@ -1,5 +1,47 @@
 {
   "products": {
+    "modretro-codex-cartridge": {
+      "name": "MODRETRO CODEX 카트리지 곧 재입고 예정",
+      "price": null,
+      "sold_out": false,
+      "url": "https://openai.com/ko-KR/supply/product/modretro-codex-cartridge/"
+    },
+    "modretro-chromatic-case-codex-edition": {
+      "name": "MODRETRO CHROMATIC 케이스: CODEX EDITION",
+      "price": null,
+      "sold_out": true,
+      "url": "https://openai.com/ko-KR/supply/product/modretro-chromatic-case-codex-edition/"
+    },
+    "dots-tote": {
+      "name": "DOTS 토트",
+      "price": "US$45.00",
+      "sold_out": false,
+      "url": "https://openai.com/ko-KR/supply/product/dots-tote/"
+    },
+    "dots-tee": {
+      "name": "DOTS 티셔츠",
+      "price": "US$40.00",
+      "sold_out": false,
+      "url": "https://openai.com/ko-KR/supply/product/dots-tee/"
+    },
+    "theresetcompany-hoodie": {
+      "name": "THERESETCOMPANY 후디",
+      "price": "US$100.00",
+      "sold_out": false,
+      "url": "https://openai.com/ko-KR/supply/product/theresetcompany-hoodie/"
+    },
+    "gpt-6-longsleeve": {
+      "name": "GPT-6 롱슬리브",
+      "price": null,
+      "sold_out": true,
+      "url": "https://openai.com/ko-KR/supply/product/gpt-6-longsleeve/"
+    },
+    "blossom-tee-gray": {
+      "name": "BLOSSOM 티셔츠",
+      "price": "US$40.00",
+      "sold_out": false,
+      "url": "https://openai.com/ko-KR/supply/product/blossom-tee-gray/"
+    },
     "decal-hoodie": {
       "name": "데칼 후디",
       "price": "US$100.00",
@@ -20,14 +62,14 @@
     },
     "26-openai-1-64-car": {
       "name": "'26 OPENAI 1:64 미니카",
-      "price": "US$15.00",
-      "sold_out": false,
+      "price": null,
+      "sold_out": true,
       "url": "https://openai.com/ko-KR/supply/product/26-openai-1-64-car/"
     },
     "air-freshener": {
       "name": "방향제",
-      "price": "US$5.00",
-      "sold_out": false,
+      "price": null,
+      "sold_out": true,
       "url": "https://openai.com/ko-KR/supply/product/air-freshener/"
     },
     "r-d-co-race-pin-pack": {
@@ -96,17 +138,17 @@
       "sold_out": true,
       "url": "https://openai.com/ko-KR/supply/product/chatgpt-longsleeve/"
     },
-    "research-half-zip": {
-      "name": "리서치 하프 집업",
-      "price": null,
-      "sold_out": true,
-      "url": "https://openai.com/ko-KR/supply/product/research-half-zip/"
-    },
     "chatgpt-basketball": {
       "name": "CHATGPT 농구공",
       "price": null,
       "sold_out": true,
       "url": "https://openai.com/ko-KR/supply/product/chatgpt-basketball/"
+    },
+    "research-half-zip": {
+      "name": "리서치 하프 집업",
+      "price": null,
+      "sold_out": true,
+      "url": "https://openai.com/ko-KR/supply/product/research-half-zip/"
     }
   },
   "posted": [
@@ -118,10 +160,11 @@
     "bumper-sticker-pack",
     "codex-bubble-cap",
     "decal-hoodie",
+    "modretro-codex-cartridge",
     "pit-crew-shirt",
     "pixel-nalgene",
     "r-d-co-race-pin-pack",
     "trackside-hat"
   ],
-  "last_run": "2026-11-03T23:39:25.484020+09:00"
+  "last_run": "2026-11-21T23:55:56.747048+09:00"
 }
